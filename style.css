@@ -1,0 +1,30 @@
+#calculator{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    border: 3px solid black;
+}
+#table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#heading{
+    text-align: center;
+}
+.button{
+    font-size: 20px;
+    height: 60px;
+    width: 50px;
+    margin: px;
+}
+#inputExpression{
+    
+    font-size: 25px;
+    color: rgb(63, 42, 6);
+    height: 40px;
+    width: 205px;
+}

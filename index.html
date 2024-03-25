@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">This page belongs to admin_name.</h1>
+        <hr>
+    </header>
+    <main>
+        <div id="calculator">
+            <table id="table">
+                <tr>
+                    <td colspan="4"><input type="text" name="inputExpression" id="inputExpression" readonly></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="expr = '';
+                    document.querySelector('#inputExpression').value = expr;
+                    ">Ac</button></td>
+                    <td><button class="button" onclick="expr += '&#40' ;
+                        document.querySelector('#inputExpression').value = expr;">&#40</button></td>
+                    <td><button class="button" onclick="expr += '&#41' ;
+                        document.querySelector('#inputExpression').value = expr;">&#41</button></td>
+                    <td><button class="button" onclick="expr += '/' ;
+                        document.querySelector('#inputExpression').value = expr;">/</button></td>
+
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="expr += '7' ;
+                        document.querySelector('#inputExpression').value = expr;">7</button></td>
+                    <td><button class="button" onclick="expr += '8' ;
+                        document.querySelector('#inputExpression').value = expr;">8</button></td>
+                    <td><button class="button" onclick="expr += '9' ;
+                        document.querySelector('#inputExpression').value = expr;">9</button></td>
+                    <td><button class="button" onclick="expr += '*' ;
+                        document.querySelector('#inputExpression').value = expr;">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="expr += '4' ;
+                        document.querySelector('#inputExpression').value = expr;">4</button></td>
+                    <td><button class="button" onclick="expr += '5' ;
+                        document.querySelector('#inputExpression').value = expr;">5</button></td>
+                    <td><button class="button" onclick="expr += '6' ;
+                        document.querySelector('#inputExpression').value = expr;">6</button></td>
+                    <td><button class="button" onclick="expr += '-' ;
+                        document.querySelector('#inputExpression').value = expr;">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="expr += '1' ;
+                        document.querySelector('#inputExpression').value = expr;">1</button></td>
+                    <td><button class="button" onclick="expr += '2' ;
+                        document.querySelector('#inputExpression').value = expr;">2</button></td>
+                    <td><button class="button" onclick="expr += '3' ;
+                        document.querySelector('#inputExpression').value = expr;">3</button></td>
+                    <td><button class="button" onclick="expr += '+' ;
+                        document.querySelector('#inputExpression').value = expr;">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="expr += '0' ;
+                        document.querySelector('#inputExpression').value = expr;">0</button></td>
+                    <td><button class="button" onclick="expr += '.' ;
+                        document.querySelector('#inputExpression').value = expr;">.</button></td>
+                    <td><button class="button" onclick="expr = expr.slice(0,-1) ;
+                        document.querySelector('#inputExpression').value = expr;">⬅️</button></td>
+                    <td><button class="button" onclick="expr = (eval(expr)) ;
+                        document.querySelector('#inputExpression').value = expr;">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script>
+        const name = 'Vishal Devasi'
+        document.querySelector('#heading').innerHTML = `This page belongs to ${name}`;
+        let expr = '';
+    
+    </script>
+    
+</body>
+</html>
